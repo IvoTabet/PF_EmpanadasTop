@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="../styles/styles.css">
+        
+    </head>
+    <body>
+        <header>
+            <img src="../img/empanadaLogo.png" alt="EmpanadasTop Logo">
+            <h1>Nuestro Menú</h1>
+            
+        </header>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="historia.html">Nuestra historia</a>
+                    </li>
+                    <li>
+                        <a href="casa.html">Nuestra casa</a>
+                    </li>
+                    <li>
+                        <a href="delivery.html">Delivery</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+
+            <div class="row scrollSpyCont">
+                <div class="col-12 btCont">
+                    <div id="list-example" class="list-group scrollSpyList">
+                        <a class="list-group-item list-group-item-action scrollSpyStyle" href="#list-item-1">Empanadas</a>
+                        <a class="list-group-item list-group-item-action scrollSpyStyle" href="#list-item-2">Milanesas</a>
+                        <a class="list-group-item list-group-item-action scrollSpyStyle" href="#list-item-3">Pizzas</a>
+                        <a class="list-group-item list-group-item-action scrollSpyStyle" href="#list-item-4">Sanguches</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="productos">
+                <ul class="categorias">
+                    <li id="list-item-1">Empanadas</li>
+                    <ul class="tipos gridCont">
+                        <li>Tradicionales</li>
+                        <ul class="sabor">
+                            <li>Carne</li>
+                            <li>Pollo</li>
+                            <li>Jamón y queso</li>
+                        </ul>
+                        <img src="../img/empanadas.jpg" alt="ejemplo empanadas" class="imgMenu">
+                        <li>Especiales</li>
+                        <ul class="sabor">
+                            <li>Bondiola a la barbacoa</li>
+                            <li>Pollo al verdeo</li>
+                            <li>Costilla con chimi</li>
+                        </ul>
+                        <img src="../img/empanadas.jpg" alt="ejemplo empanadas" class="imgMenu">
+                        <li>Sin carne</li>
+                        <ul class="sabor">
+                            <li>Caprese</li>
+                            <li>Berenjena y roquefort</li>
+                            <li>5 quesos</li>
+                        </ul>
+                        <img src="../img/empanadas.jpg" alt="ejemplo empanadas" class="imgMenu">
+                    </ul>
+                    <div class="gridCont">
+                        <li id="list-item-2">Milanesas</li>
+                        <ul class="sabor">
+                            <li>Carne</li>
+                            <li>Pollo</li>
+                            <li>Garbanzo</li>
+                            <p>(Elija su cobertura)</p>
+                            <li>mussa</li>
+                            <li>napo</li>
+                            <li>cheddar y bacon</li>
+                        </ul>
+                        <img src="../img/milanesa.png" alt="ejemplo milanesa" class="imgMenu">
+                        <li id="list-item-3">Pizzas</li>
+                        <ul class="sabor">
+                            <li>mussa</li>
+                            <li>napo</li>
+                            <li>5 quesos</li>
+                            <li>jamón y provolone</li>
+                            <li>bacon</li>
+                        </ul>
+                        <img src="../img/pizza.png" alt="Ejemplo pizza" class="imgMenu">
+                        <li id="list-item-4">Sanguches</li>
+                        <ul class="sabor">
+                            <li>choripan</li>
+                            <li>milanesa</li>
+                            <li>bondiola</li>
+                            <li>carne desfiada</li>
+                        </ul>
+                        <img src="../img/sandDesf.jpg" alt="Ejemplo sanguche" class="imgMenu">
+                    </div>
+                    
+                </ul>
+            </div>
+            
+        </main>
+
+        <footer>
+            <a href="">Legales</a>
+            <a href="">politica de cookies</a>
+            <a href="">Aviso legal</a>
+            <p>Derechos reservados</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

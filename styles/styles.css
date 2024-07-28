@@ -1,0 +1,497 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Font */
+
+@font-face {
+    font-family: "exo";
+    src: url(../fonts/Exo-VariableFont_wght.ttf) format("truetype");
+    
+}
+
+/*Estilos generales*/
+
+body{
+    font-family:"exo";
+    background-color: #fa4;
+}
+
+/*header*/
+
+header h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    color: #222;
+}
+
+/*Aside*/
+
+aside nav ul li{
+    list-style: none;
+}
+
+aside nav ul li a{
+    list-style: none;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/*main*/
+
+main{
+    background-color: #fa4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*main menu scrollspy*/
+.scrollSpyStyle{
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #fc8;
+    height: 100px;
+    
+}
+
+footer a{
+    display: block;
+}
+
+footer p{
+    text-align: end;
+    display: block;
+}
+
+/*Media Query*/
+
+/*Mobile*/
+
+@media screen and (max-width: 451px){
+
+    body{
+        font-family:"exo";
+        background-color: #fa4;
+    }
+
+    header{
+        background-color: #fa4;
+    }
+
+    header img{
+        width: 60px;
+        margin: 3px;
+        border-radius: 50%;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline;
+        font-weight: 900;
+        color: #222;
+    }
+
+    /*Aside Styles*/
+
+    aside{
+        background-color: #fa4;
+    }
+
+    aside nav ul li{
+        list-style: none;
+    }
+
+    aside nav ul li a{
+        list-style: none;
+        color: #222;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px;
+    }
+
+    /*Main Styles*/
+
+    main{
+        background-color: #fa4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main img{
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 0 7px 1px #1117;
+        margin: 2px;
+    }
+
+    main img .empanadas{
+        width: 10px;
+    }
+
+    main .presentacion {
+        font-size: 15px;
+    }
+
+    /* estilos main menu */
+
+    .btCont{
+        border: solid 3px #d82;
+        background-color: #e93;
+        border-radius: 3px;
+        padding: 15px;
+    }
+
+    .scrollSpyStyle{
+        font-size: 25px;
+        margin: 10px 0;
+        padding: 0;
+        background-color: #e93;
+        border: none;
+        text-decoration: underline;
+    }
+
+    main .categorias{
+        font-size: 25px;
+        list-style: none;
+    }
+
+    main ul .tipos{
+        font-size: 23px;
+        list-style: none;
+    }
+
+    main ul .sabor{
+        font-size: 17px;
+        list-style: disc;
+    }
+
+    main p{
+        font-size: 23px;
+    }
+
+    main .imgMenu{
+        width: 200px;
+    }
+
+    /*estilos main historia */
+
+    .tarjeta{
+        width: 90%;
+        margin: 20px 0 20px 0;
+        padding: 5px;
+        border: #ddd solid 5px;
+        border-radius: 10px;
+        background-color: #fa7;
+        box-shadow: 0 0 7px 1px #1117;
+    }
+
+    .imgCard{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .cardH5{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+
+    main div p{
+        font-size: 20px;
+        text-align: justify;
+        margin: 10px 30px;
+    }
+
+    main div h2{
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 800;
+    }
+
+    .historia{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .imgHistoria{
+        width: 75%;
+        border: 2px solid #1117;
+        border-radius: 5px;
+    }
+
+    /*main casa styles*/
+
+    .salon{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    main iframe{
+        width: 300px;
+        height: 300px;
+        margin: 10px 30%;
+        border-radius: 5px;
+    }
+
+    /*main delivery styles*/
+
+
+    .delivery{
+        width: 85%;
+    }
+
+    .acordeonCont{
+        width: 80%;
+    }
+
+    .acordeonItem{
+        width: 100%;
+        border: none;
+    }
+
+    .acordeonPregunta{
+        background-color: #d82;
+        border: #222 solid 3px;
+    }
+
+    .acordeonResponde{
+        background-color: #e93;
+    }
+
+
+    main div .pedidos{
+        font-size: 20px;
+        list-style: none;
+    }
+
+    main div span{
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    /*Footer Styles*/
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width:451px){
+    
+    /*header*/
+
+    header img{
+        width: 100px;
+        margin: 5px;
+        border-radius: 50%;
+    }
+
+    header h1{
+        font-size: 55px;
+    }
+
+    /*aside*/
+
+    aside nav ul li a{
+        font-size: 30px;
+    }
+
+    /*main index*/
+
+    main img{
+
+        width: 600px;
+        border: 1px solid #3339;
+        border-radius: 5px;
+        box-shadow: 0 0 7px 1px #1117;
+        margin: 2px;
+    }
+
+    .presentacion{
+        margin: 15px;
+    }
+
+    /*main Menu*/
+
+    .scrollSpyCont{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .btCont{
+        border: solid 3px #d82;
+        background-color: #e93;
+        border-radius: 3px;
+        padding: 15px;
+        
+    }
+
+    .scrollSpyList{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .scrollSpyStyle{
+        font-size: 30px;
+        margin: 10px 0;
+        padding: 0;
+        background-color: #e93;
+        border: none;
+        text-decoration: underline;
+        font-weight: 700;
+
+    }
+
+    main .categorias{
+        font-size: 40px;
+        list-style: none;
+    }
+
+    main ul .tipos{
+        font-size: 30px;
+        list-style: none;
+    }
+
+    main ul .gridCont{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main ul .sabor{
+        font-size: 23px;
+        list-style: disc;
+        grid-column: 1/3;
+    }
+
+    main p{
+        font-size: 23px;
+    }
+
+    .imgMenu{
+        width: 350px;
+        grid-column: 3/5;
+    }
+
+    /*estilos main historia */
+
+    .tarjeta{
+        width: 50%;
+        margin: 20px 0 20px 0;
+        padding: 5px;
+        border: #ddd solid 5px;
+        border-radius: 10px;
+        background-color: #fa7;
+        box-shadow: 0 0 7px 1px #1117;
+    }
+
+    .imgCard{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .cardH5{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+
+    main div p{
+        font-size: 20px;
+        text-align: justify;
+        margin: 10px 30px;
+    }
+
+    main div h2{
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 800;
+    }
+
+    .historia{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .imgHistoria{
+        width: 350px;
+        border: 2px solid #1117;
+        border-radius: 5px;
+    }
+
+    #fotoFlia{
+        object-fit:cover;
+    }
+
+    /*main casa styles*/
+
+    .salon{
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    main iframe{
+        width: 500px;
+        height: 300px;
+        margin: 10px 30%;
+        border-radius: 5px;
+    }
+
+    /*Delivery Styles*/
+
+    .delivery{
+        width: 85%;
+    }
+
+    .acordeonCont{
+        width: 80%;
+    }
+
+    .acordeonItem{
+        width: 100%;
+        border: none;
+    }
+
+    .acordeonPregunta{
+        background-color: #d82;
+        border: #222 solid 3px;
+    }
+
+    .acordeonResponde{
+        background-color: #e93;
+    }
+
+    main div .pedidos{
+        font-size: 20px;
+        list-style: none;
+    }
+
+    main div span{
+        text-decoration: underline;
+        text-align: justify;
+        font-weight: 600;
+    }
+}
+
