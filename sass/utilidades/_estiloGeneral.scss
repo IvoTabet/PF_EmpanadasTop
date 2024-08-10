@@ -34,6 +34,11 @@ header{
         font-weight: 900;
         color: $colorText;
     }
+    .animacion{
+        animation-name: fadeDownIN;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
     nav{
         ul{
             li{
@@ -140,5 +145,24 @@ footer{
         .presentacion{
             margin: 15px;
         }
+    }
+}
+
+@keyframes fadeDownIN{
+    0%{
+        color: #2220;
+        transform: translateY(-100px);
+    }
+    25%{
+        color: #2224;
+    }
+    50%{
+        color: #2228;
+    }
+    75%{
+        color: #222b;
+    }
+    100%{
+        color: #222f;
     }
 }

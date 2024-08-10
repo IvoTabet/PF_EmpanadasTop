@@ -22,6 +22,11 @@ header h1 {
   font-weight: 900;
   color: #222;
 }
+header .animacion {
+  animation-name: fadeDownIN;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
 header nav ul li {
   list-style: none;
 }
@@ -102,6 +107,24 @@ footer p {
   }
   main .presentacion {
     margin: 15px;
+  }
+}
+@keyframes fadeDownIN {
+  0% {
+    color: rgba(34, 34, 34, 0);
+    transform: translateY(-100px);
+  }
+  25% {
+    color: rgba(34, 34, 34, 0.2666666667);
+  }
+  50% {
+    color: rgba(34, 34, 34, 0.5333333333);
+  }
+  75% {
+    color: rgba(34, 34, 34, 0.7333333333);
+  }
+  100% {
+    color: #222222;
   }
 }
 /* Menu */
