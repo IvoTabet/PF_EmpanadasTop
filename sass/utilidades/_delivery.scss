@@ -1,0 +1,85 @@
+// estilos Delivery
+
+@import "_variables.scss";
+
+/*Media Query Mobile Delivery*/
+@media screen and (max-width: 451px){
+    main{
+        
+        div{
+            .delivery{
+                width: 85%;
+            }
+        
+            .acordeonCont{
+                width: 80%;
+            }
+        
+            .acordeonItem{
+                width: 100%;
+                border: none;
+            }
+        
+            .acordeonPregunta{
+                background-color: $colorSecuBT;
+                border: $colorText solid 3px;
+            }
+        
+            .acordeonResponde{
+                background-color: #e93;
+            }
+
+            .pedidos{
+                font-size: 20px;
+                list-style: none;
+            }
+
+            span{
+                text-decoration: underline;
+                font-weight: 600;
+            }
+        }
+        
+    }
+}
+
+/*Media Query Mobile Delivery*/
+@media screen and (min-width:451px){
+    
+    main{
+        .delivery{
+            width: 85%;
+        }
+    
+        .acordeonCont{
+            width: 80%;
+        }
+    
+        .acordeonItem{
+            width: 100%;
+            border: none;
+        }
+    
+        .acordeonPregunta{
+            background-color: $colorSecuBT;
+            border: $colorText solid 3px;
+        }
+    
+        .acordeonResponde{
+            background-color: #e93;
+        }
+        div{
+            .pedidos{
+                font-size: 20px;
+                list-style: none;
+            }
+            span{
+                text-decoration: underline;
+                text-align: justify;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    
+}

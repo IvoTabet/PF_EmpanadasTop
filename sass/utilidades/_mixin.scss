@@ -1,0 +1,14 @@
+// Mixins 
+
+@mixin reset{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin headerIMG($width, $margin, $bordRadio){
+    width: $width;
+    margin: $margin;
+    border-radius: $bordRadio;
+}
+

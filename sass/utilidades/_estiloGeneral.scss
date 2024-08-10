@@ -1,0 +1,144 @@
+//imports
+
+@import "_variables.scss";
+@import "_mixin.scss";
+
+// Reset
+
+*{
+    @include reset;
+}
+
+/* Font */
+
+@font-face {
+    font-family: "exo";
+    src: url(../fonts/Exo-VariableFont_wght.ttf) format("truetype");
+}
+
+
+
+/* Body */
+
+body{
+    font-family:"exo";
+    background-color: $colorFondo;
+}
+
+/* Header */
+
+header{
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 900;
+        color: $colorText;
+    }
+    nav{
+        ul{
+            li{
+                list-style: none;
+                a{
+                    list-style: none;
+                    color: $colorText;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+/*Main*/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        border-radius: 5px;
+        box-shadow: 0 0 7px 1px #1117;
+        margin: 2px;
+    }
+}
+
+/*Footer*/
+
+footer{
+    background-color: #fb7;
+    height: 100px;
+    a{
+        display: block;
+        margin-left: 15px;
+        color: $colorText;
+        text-decoration: none;
+    }
+    p{
+        text-align: end;
+        display: block;
+        margin-right: 15px;
+    }
+}
+
+/*Media Query Mobile general*/
+//general e index
+@media screen and (max-width: 451px){
+    header{
+        img{
+            @include headerIMG(60px, 3px, 50%);
+        }
+        h1{
+            font-size: 30px;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 20px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        img{
+            width: 200px;
+            border: $bordeGeneral;
+        }
+        .presentacion{
+            font-size: 15px;
+        }
+    }
+}
+
+/*Media Query Desktop general*/
+
+@media screen and (min-width:451px){
+    header{
+        img{
+            @include headerIMG(100px, 5px, 50%);
+        }
+        h1{
+            font-size: 55px;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        img{
+            width: 600px;
+            border: $bordeGeneral;
+        }
+        .presentacion{
+            margin: 15px;
+        }
+    }
+}

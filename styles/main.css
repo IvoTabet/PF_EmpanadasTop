@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+  font-family: "exo";
+  src: url(../fonts/Exo-VariableFont_wght.ttf) format("truetype");
+}
+/* Body */
+body {
+  font-family: "exo";
+  background-color: #fa4;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 900;
+  color: #222;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  list-style: none;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*Main*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main img {
+  border-radius: 5px;
+  box-shadow: 0 0 7px 1px rgba(17, 17, 17, 0.4666666667);
+  margin: 2px;
+}
+
+/*Footer*/
+footer {
+  background-color: #fb7;
+  height: 100px;
+}
+footer a {
+  display: block;
+  margin-left: 15px;
+  color: #222;
+  text-decoration: none;
+}
+footer p {
+  text-align: end;
+  display: block;
+  margin-right: 15px;
+}
+
+/*Media Query Mobile general*/
+@media screen and (max-width: 451px) {
+  header img {
+    width: 60px;
+    margin: 3px;
+    border-radius: 50%;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+    margin: 5px;
+  }
+  main img {
+    width: 200px;
+    border: #ddd solid 3px;
+  }
+  main .presentacion {
+    font-size: 15px;
+  }
+}
+/*Media Query Desktop general*/
+@media screen and (min-width: 451px) {
+  header img {
+    width: 100px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  header h1 {
+    font-size: 55px;
+  }
+  header nav ul li a {
+    font-size: 30px;
+  }
+  main img {
+    width: 600px;
+    border: #ddd solid 3px;
+  }
+  main .presentacion {
+    margin: 15px;
+  }
+}
+/* Menu */
+.scrollSpyStyle {
+  color: #222;
+  text-decoration: underline;
+  font-weight: 600;
+  margin: 5px;
+  background-color: #e93;
+}
+
+.btCont {
+  border: solid 3px #d82;
+  background-color: #e93;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/*Media Query Mobile menu*/
+@media screen and (max-width: 451px) {
+  main .scrollSpyList {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .scrollSpyStyle {
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+  }
+  main .scrollSpyStyle:hover {
+    background-color: #d82;
+    color: #222;
+  }
+  main .categorias {
+    font-size: 25px;
+    list-style: none;
+  }
+  main ul .tipos {
+    font-size: 23px;
+    list-style: none;
+    padding: 0;
+  }
+  main ul .sabor {
+    font-size: 17px;
+    list-style: disc;
+  }
+  main p {
+    font-size: 23px;
+  }
+  main .imgMenu {
+    width: 200px;
+  }
+}
+/*Media Query Desktop menu*/
+@media screen and (min-width: 451px) {
+  main .scrollSpyCont {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  main .scrollSpyList {
+    text-align: center;
+  }
+  main .scrollSpyStyle:hover {
+    background-color: #d82;
+    color: #222;
+  }
+  main .scrollSpyStyle {
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+    font-weight: 700;
+  }
+  main .categorias {
+    font-size: 40px;
+    list-style: none;
+  }
+  main ul .tipos {
+    font-size: 30px;
+    list-style: none;
+  }
+  main ul .gridCont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+  }
+  main ul .sabor {
+    font-size: 23px;
+    list-style: disc;
+    grid-column: 1/3;
+  }
+  main p {
+    font-size: 23px;
+  }
+  main .imgMenu {
+    width: 350px;
+    grid-column: 3/5;
+  }
+}
+/* Media Query Mobile Historia*/
+@media screen and (max-width: 451px) {
+  main div p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 30px;
+  }
+  main div h2 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+  }
+  main .tarjeta {
+    width: 90%;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+    border: #ddd solid 5px;
+    border-radius: 10px;
+    background-color: #fa7;
+    box-shadow: 0 0 7px 1px rgba(17, 17, 17, 0.4666666667);
+  }
+  main .imgCard {
+    width: 80%;
+    margin: 0 10%;
+  }
+  main .cardH5 {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  main .historia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .imgHistoria {
+    width: 75%;
+    border-radius: 5px;
+  }
+}
+/* Media Query Desktop Historia */
+@media screen and (min-width: 451px) {
+  main div p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 30px;
+  }
+  main div h2 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+  }
+  main .tarjeta {
+    width: 50%;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+    border: #ddd solid 5px;
+    border-radius: 10px;
+    background-color: #fa7;
+    box-shadow: 0 0 7px 1px rgba(17, 17, 17, 0.4666666667);
+  }
+  main .imgCard {
+    width: 80%;
+    margin: 0 10%;
+  }
+  main .cardH3 {
+    font-size: 30px;
+    margin-left: 30px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  main .historia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .imgHistoria {
+    width: 350px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  main #fotoFlia {
+    object-fit: cover;
+    width: 600px;
+  }
+}
+/* Media Query Mobile Casa*/
+@media screen and (max-width: 451px) {
+  main iframe {
+    width: 300px;
+    height: 300px;
+    margin: 10px 30%;
+    border-radius: 5px;
+  }
+  main .salon {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+/* Media Query Desktop Casa*/
+@media screen and (min-width: 451px) {
+  main .salon {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+  main iframe {
+    width: 500px;
+    height: 300px;
+    margin: 10px 30%;
+    border-radius: 5px;
+  }
+}
+/*Media Query Mobile Delivery*/
+@media screen and (max-width: 451px) {
+  main div .delivery {
+    width: 85%;
+  }
+  main div .acordeonCont {
+    width: 80%;
+  }
+  main div .acordeonItem {
+    width: 100%;
+    border: none;
+  }
+  main div .acordeonPregunta {
+    background-color: #d82;
+    border: #222 solid 3px;
+  }
+  main div .acordeonResponde {
+    background-color: #e93;
+  }
+  main div .pedidos {
+    font-size: 20px;
+    list-style: none;
+  }
+  main div span {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+/*Media Query Mobile Delivery*/
+@media screen and (min-width: 451px) {
+  main .delivery {
+    width: 85%;
+  }
+  main .acordeonCont {
+    width: 80%;
+  }
+  main .acordeonItem {
+    width: 100%;
+    border: none;
+  }
+  main .acordeonPregunta {
+    background-color: #d82;
+    border: #222 solid 3px;
+  }
+  main .acordeonResponde {
+    background-color: #e93;
+  }
+  main div .pedidos {
+    font-size: 20px;
+    list-style: none;
+  }
+  main div span {
+    text-decoration: underline;
+    text-align: justify;
+    font-weight: 600;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,107 @@
+//estilos Nuestra Historia
+
+@import "_variables.scss";
+
+/* Media Query Mobile Historia*/
+@media screen and (max-width: 451px){
+    
+    main{
+        div{
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin: 10px 30px;
+            }
+            h2{
+                font-size: 40px;
+                text-align: center;
+                text-decoration: underline;
+                font-weight: 800;
+            }
+        }
+        .tarjeta{
+            width: 90%;
+            margin: 20px 0 20px 0;
+            padding: 5px;
+            border: #ddd solid 5px;
+            border-radius: 10px;
+            background-color: #fa7;
+            box-shadow: 0 0 7px 1px #1117;
+        }
+        .imgCard{
+            width: 80%;
+            margin: 0 10%;
+        }
+        .cardH5{
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        .historia{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        .imgHistoria{
+            width: 75%;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* Media Query Desktop Historia */
+@media screen and (min-width:451px){
+    main{
+        div{
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin: 10px 30px;
+            }
+            h2{
+                font-size: 40px;
+                text-align: center;
+                text-decoration: underline;
+                font-weight: 800;
+            }
+        }
+        .tarjeta{
+            width: 50%;
+            margin: 20px 0 20px 0;
+            padding: 5px;
+            border: #ddd solid 5px;
+            border-radius: 10px;
+            background-color: #fa7;
+            box-shadow: 0 0 7px 1px #1117;
+        }
+
+        .imgCard{
+            width: 80%;
+            margin: 0 10%;
+        }
+    
+        .cardH3{
+            font-size: 30px;
+            margin-left: 30px;
+            text-decoration: underline;
+            text-align: center;
+        }
+    
+        .historia{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        .imgHistoria{
+            width: 350px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    
+        #fotoFlia{
+            object-fit:cover;
+            width: 600px;
+        }
+    }
+}
