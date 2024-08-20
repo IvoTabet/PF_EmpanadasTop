@@ -3,7 +3,7 @@
 @import "_variables.scss";
 
 /* Media Query Mobile Historia*/
-@media screen and (max-width: 451px){
+@media screen and (max-width: 500px){
     
     main{
         div{
@@ -49,8 +49,63 @@
     }
 }
 
+@media screen and (min-width: 501px) and (max-width: 768px){
+    main{
+        div{
+            p{
+                font-size: 18px;
+                text-align: justify;
+                margin: 10px 30px;
+            }
+            h2{
+                font-size: 35px;
+                text-align: center;
+                text-decoration: underline;
+                font-weight: 800;
+            }
+        }
+        .tarjeta{
+            width: 70%;
+            margin: 20px 0 20px 0;
+            padding: 5px;
+            border: #ddd solid 5px;
+            border-radius: 10px;
+            background-color: #fa7;
+            box-shadow: 0 0 7px 1px #1117;
+        }
+
+        .imgCard{
+            width: 80%;
+            margin: 0 10%;
+        }
+    
+        .cardH3{
+            font-size: 25px;
+            margin-left: 30px;
+            text-decoration: underline;
+            text-align: center;
+        }
+    
+        .historia{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        .imgHistoria{
+            width: 400px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    
+        #fotoFlia{
+            object-fit:cover;
+        }
+    }
+}
+
 /* Media Query Desktop Historia */
-@media screen and (min-width:451px){
+@media screen and (min-width:769px){
     main{
         div{
             p{
@@ -66,7 +121,7 @@
             }
         }
         .tarjeta{
-            width: 50%;
+            width: 60%;
             margin: 20px 0 20px 0;
             padding: 5px;
             border: #ddd solid 5px;
@@ -101,7 +156,7 @@
     
         #fotoFlia{
             object-fit:cover;
-            width: 600px;
+            width: 500px;
         }
     }
 }

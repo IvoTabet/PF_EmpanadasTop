@@ -3,7 +3,7 @@
 @import "_variables.scss";
 
 /* Media Query Mobile Casa*/
-@media screen and (max-width: 451px){
+@media screen and (max-width: 500px){
     main{
         iframe{
             width: 300px;
@@ -19,8 +19,24 @@
     }
 }
 
+@media screen and (min-width: 501px) and (max-width: 768px){
+    main{
+        .salon{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        iframe{
+            width: 400px;
+            height: 300px;
+            margin: 10px 30%;
+            border-radius: 5px;
+        }
+    }
+}
+
 /* Media Query Desktop Casa*/
-@media screen and (min-width: 451px){
+@media screen and (min-width: 769px){
     main{
         .salon{
             width: 500px;

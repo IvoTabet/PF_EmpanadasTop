@@ -87,7 +87,7 @@ footer{
 
 /*Media Query Mobile general*/
 //general e index
-@media screen and (max-width: 451px){
+@media screen and (max-width: 500px){
     header{
         img{
             @include headerIMG(60px, 3px, 50%);
@@ -117,9 +117,39 @@ footer{
     }
 }
 
+@media screen and (min-width: 501px) and (max-width: 768px){
+    header{
+        img{
+            @include headerIMG(80px, 4px, 50%);
+        }
+        h1{
+            font-size: 45px;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 23px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        img{
+            width: 500px;
+            border: $bordeGeneral;
+        }
+        .presentacion{
+            font-size: 18px;
+        }
+    }
+}
+
 /*Media Query Desktop general*/
 
-@media screen and (min-width:451px){
+@media screen and (min-width:769px){
     header{
         img{
             @include headerIMG(100px, 5px, 50%);

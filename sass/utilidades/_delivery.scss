@@ -3,33 +3,31 @@
 @import "_variables.scss";
 
 /*Media Query Mobile Delivery*/
-@media screen and (max-width: 451px){
+@media screen and (max-width: 500px){
     main{
-        
+        .delivery{
+            width: 90%;
+        }
+    
+        .acordeonCont{
+            width: 80%;
+        }
+    
+        .acordeonItem{
+            width: 100%;
+            border: none;
+        }
+    
+        .acordeonPregunta{
+            background-color: $colorSecuBT;
+            border: $colorText solid 3px;
+        }
+    
+        .acordeonResponde{
+            background-color: #e93;
+        }
         div{
-            .delivery{
-                width: 85%;
-            }
-        
-            .acordeonCont{
-                width: 80%;
-            }
-        
-            .acordeonItem{
-                width: 100%;
-                border: none;
-            }
-        
-            .acordeonPregunta{
-                background-color: $colorSecuBT;
-                border: $colorText solid 3px;
-            }
-        
-            .acordeonResponde{
-                background-color: #e93;
-            }
-
-            .pedidos{
+                .pedidos{
                 font-size: 20px;
                 list-style: none;
             }
@@ -43,12 +41,49 @@
     }
 }
 
-/*Media Query Mobile Delivery*/
-@media screen and (min-width:451px){
+@media screen and (min-width: 501px) and (max-width: 768px){
+    main{
+        .delivery{
+            width: 90%;
+        }
+    
+        .acordeonCont{
+            width: 80%;
+        }
+    
+        .acordeonItem{
+            width: 100%;
+            border: none;
+        }
+    
+        .acordeonPregunta{
+            background-color: $colorSecuBT;
+            border: $colorText solid 3px;
+        }
+    
+        .acordeonResponde{
+            background-color: #e93;
+        }
+        div{
+            .pedidos{
+                font-size: 20px;
+                list-style: none;
+            }
+            span{
+                text-decoration: underline;
+                text-align: justify;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*Media Query Desktop Delivery*/
+@media screen and (min-width:769px){
     
     main{
         .delivery{
-            width: 85%;
+            width: 90%;
         }
     
         .acordeonCont{

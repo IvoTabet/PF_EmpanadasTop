@@ -67,7 +67,7 @@ footer p {
 }
 
 /*Media Query Mobile general*/
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 500px) {
   header img {
     width: 60px;
     margin: 3px;
@@ -88,8 +88,29 @@ footer p {
     font-size: 15px;
   }
 }
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  header img {
+    width: 80px;
+    margin: 4px;
+    border-radius: 50%;
+  }
+  header h1 {
+    font-size: 45px;
+  }
+  header nav ul li a {
+    font-size: 23px;
+    margin: 5px;
+  }
+  main img {
+    width: 500px;
+    border: #ddd solid 3px;
+  }
+  main .presentacion {
+    font-size: 18px;
+  }
+}
 /*Media Query Desktop general*/
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 769px) {
   header img {
     width: 100px;
     margin: 5px;
@@ -144,8 +165,13 @@ footer p {
 }
 
 /*Media Query Mobile menu*/
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 500px) {
+  main .scrollSpyCont {
+    width: 60%;
+    margin-bottom: 30px;
+  }
   main .scrollSpyList {
+    text-align: center;
     display: flex;
     justify-content: space-around;
   }
@@ -179,10 +205,55 @@ footer p {
     width: 200px;
   }
 }
-/*Media Query Desktop menu*/
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main .scrollSpyCont {
-    width: 50%;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  main .scrollSpyList {
+    text-align: center;
+  }
+  main .scrollSpyStyle:hover {
+    background-color: #d82;
+    color: #222;
+  }
+  main .scrollSpyStyle {
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+    font-weight: 700;
+  }
+  main .categorias {
+    font-size: 32px;
+    list-style: none;
+  }
+  main ul .tipos {
+    font-size: 27px;
+    list-style: none;
+  }
+  main ul .gridCont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+  }
+  main ul .sabor {
+    font-size: 20px;
+    list-style: disc;
+    grid-column: 1/3;
+  }
+  main p {
+    font-size: 20px;
+  }
+  main .imgMenu {
+    width: 280px;
+    grid-column: 3/5;
+  }
+}
+/*Media Query Desktop menu*/
+@media screen and (min-width: 769px) {
+  main .scrollSpyCont {
+    width: 60%;
     margin-bottom: 30px;
   }
   main .scrollSpyList {
@@ -226,7 +297,7 @@ footer p {
   }
 }
 /* Media Query Mobile Historia*/
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 500px) {
   main div p {
     font-size: 20px;
     text-align: justify;
@@ -265,8 +336,53 @@ footer p {
     border-radius: 5px;
   }
 }
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  main div p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 30px;
+  }
+  main div h2 {
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+  }
+  main .tarjeta {
+    width: 70%;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+    border: #ddd solid 5px;
+    border-radius: 10px;
+    background-color: #fa7;
+    box-shadow: 0 0 7px 1px rgba(17, 17, 17, 0.4666666667);
+  }
+  main .imgCard {
+    width: 80%;
+    margin: 0 10%;
+  }
+  main .cardH3 {
+    font-size: 25px;
+    margin-left: 30px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  main .historia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .imgHistoria {
+    width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  main #fotoFlia {
+    object-fit: cover;
+  }
+}
 /* Media Query Desktop Historia */
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 769px) {
   main div p {
     font-size: 20px;
     text-align: justify;
@@ -279,7 +395,7 @@ footer p {
     font-weight: 800;
   }
   main .tarjeta {
-    width: 50%;
+    width: 60%;
     margin: 20px 0 20px 0;
     padding: 5px;
     border: #ddd solid 5px;
@@ -309,11 +425,11 @@ footer p {
   }
   main #fotoFlia {
     object-fit: cover;
-    width: 600px;
+    width: 500px;
   }
 }
 /* Media Query Mobile Casa*/
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 500px) {
   main iframe {
     width: 300px;
     height: 300px;
@@ -326,8 +442,21 @@ footer p {
     object-fit: cover;
   }
 }
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  main .salon {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+  main iframe {
+    width: 400px;
+    height: 300px;
+    margin: 10px 30%;
+    border-radius: 5px;
+  }
+}
 /* Media Query Desktop Casa*/
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 769px) {
   main .salon {
     width: 500px;
     height: 500px;
@@ -341,22 +470,22 @@ footer p {
   }
 }
 /*Media Query Mobile Delivery*/
-@media screen and (max-width: 451px) {
-  main div .delivery {
-    width: 85%;
+@media screen and (max-width: 500px) {
+  main .delivery {
+    width: 90%;
   }
-  main div .acordeonCont {
+  main .acordeonCont {
     width: 80%;
   }
-  main div .acordeonItem {
+  main .acordeonItem {
     width: 100%;
     border: none;
   }
-  main div .acordeonPregunta {
+  main .acordeonPregunta {
     background-color: #d82;
     border: #222 solid 3px;
   }
-  main div .acordeonResponde {
+  main .acordeonResponde {
     background-color: #e93;
   }
   main div .pedidos {
@@ -368,10 +497,38 @@ footer p {
     font-weight: 600;
   }
 }
-/*Media Query Mobile Delivery*/
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main .delivery {
-    width: 85%;
+    width: 90%;
+  }
+  main .acordeonCont {
+    width: 80%;
+  }
+  main .acordeonItem {
+    width: 100%;
+    border: none;
+  }
+  main .acordeonPregunta {
+    background-color: #d82;
+    border: #222 solid 3px;
+  }
+  main .acordeonResponde {
+    background-color: #e93;
+  }
+  main div .pedidos {
+    font-size: 20px;
+    list-style: none;
+  }
+  main div span {
+    text-decoration: underline;
+    text-align: justify;
+    font-weight: 600;
+  }
+}
+/*Media Query Desktop Delivery*/
+@media screen and (min-width: 769px) {
+  main .delivery {
+    width: 90%;
   }
   main .acordeonCont {
     width: 80%;
